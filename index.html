@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js-regexp</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article class="main-section">
+      <h1>Регулярні вирази у JavaScript</h1>
+      <div class="main-section-wrapper">
+        <div class="form-wrapper">
+          <form method="post" id="main-form">
+            <div>
+              <p class="field-label" id="pattern-label">Шаблон для пошуку у тексті:</p>
+              <input id="pattern" type="text" name="pattern" />
+            </div>
+            <div>
+              <p class="field-label" id="input-label">Текст:</p>
+              <textarea id="input-text" name="input-text"></textarea>
+            </div>
+            <input class="submit-button" type="submit" value="Знайти співпадіння" />
+          </form>
+        </div>
+        <div class="result">
+          <p class="field-label">Співпадіння:</p>
+          <p id="resultMatch"></p>
+        </div>
+      </div>
+    </article>
+    <script src="script.js"></script>
+  </body>
+</html>
